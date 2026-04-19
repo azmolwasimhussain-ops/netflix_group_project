@@ -7,7 +7,11 @@ function Home() {
         <div className="home">
             <Navbar />
             <Banner />
-            <Row />
+            <section className="content">
+                <Row title="Trending Now" />
+                <Row title="Continue Watching" />
+                <Row title="New Releases" />
+            </section>
         </div>
     );
 }

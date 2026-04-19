@@ -22,31 +22,32 @@ function Navbar() {
 
     return (
         <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
-            <div className="navbar__logo">
-                <svg
-                    viewBox="0 0 111 30"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="111"
-                    height="30"
-                >
-                    <g>
-                        <path
-                            d="M105.06696,14.672 C105.06696,23.382886 98.3068792,30.628155 90.0031156,30.628155 C81.6993521,30.628155 74.9292712,23.382886 74.9292712,14.672 C74.9292712,5.961114 81.6993521,0 90.0031156,0 C98.3068792,0 105.06696,5.961114 105.06696,14.672 Z"
-                            fill="#E50914"
-                        ></path>
-                        <path
-                            d="M0,0 L5.63973468,0 L5.63973468,25.6685437 L17.3564181,25.6685437 L17.3564181,30.3027149 L0,30.3027149 L0,0 Z M54.6986899,0 L60.5180624,0 L46.8336705,30.3027149 L40.8652446,30.3027149 L27.1808527,0 L33.0002252,0 L42.8474178,22.5869936 L54.6986899,0 Z M107.919941,13.7538905 C107.919941,10.3315233 105.939493,7.60894941 102.64014,7.60894941 C99.3407746,7.60894941 97.3603263,10.3315233 97.3603263,13.7538905 C97.3603263,17.1762577 99.3407746,19.8988316 102.64014,19.8988316 C105.939493,19.8988316 107.919941,17.1762577 107.919941,13.7538905 Z"
-                            fill="#000000"
-                        ></path>
-                    </g>
-                </svg>
+            <div className="navbar__left">
+                <div className="navbar__logo">CINEMA</div>
+                <div className="navbar__menu">
+                    <a href="#" className="navbar__link">Home</a>
+                    <a href="#" className="navbar__link">TV Shows</a>
+                    <a href="#" className="navbar__link">Movies</a>
+                    <a href="#" className="navbar__link">New & Popular</a>
+                    <a href="#" className="navbar__link">My List</a>
+                </div>
             </div>
-            <div className="navbar__menu">
-                <a href="#" className="navbar__link">Home</a>
-                <a href="#" className="navbar__link">TV Shows</a>
-                <a href="#" className="navbar__link">Movies</a>
-                <a href="#" className="navbar__link">New & Popular</a>
+            <div className="navbar__right">
+                <button className="navbar__icon navbar__search" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                    </svg>
+                </button>
+                <button className="navbar__icon navbar__notifications" aria-label="Notifications">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.5 1.5H9.5V.5h1v1zM5.5 5a4.5 4.5 0 119 0v7l3 4v1h-15v-1l3-4v-7zm1 0v7a1 1 0 00.3.7l2.2 2.9V17h4v-1.4l2.2-2.9A1 1 0 0015.5 12V5a3.5 3.5 0 00-7 0z" />
+                    </svg>
+                </button>
+                <button className="navbar__icon navbar__profile" aria-label="Profile">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                </button>
             </div>
         </nav>
     );
