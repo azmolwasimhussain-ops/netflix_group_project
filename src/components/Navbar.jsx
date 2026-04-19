@@ -21,10 +21,10 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
-            <div className="navbar__left">
-                <div className="navbar__logo">CINEMA</div>
-                <div className="navbar__menu">
+        <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`} style={{ margin: 0, padding: 0 }}>
+            <div className="navbar__left" style={{ margin: 0, padding: 0 }}>
+                <div className="navbar__logo" style={{ margin: 0, padding: 0 }}>CINEMA</div>
+                <div className="navbar__menu" style={{ margin: 0, padding: 0 }}>
                     <a href="#" className="navbar__link">Home</a>
                     <a href="#" className="navbar__link">TV Shows</a>
                     <a href="#" className="navbar__link">Movies</a>
@@ -32,7 +32,7 @@ function Navbar() {
                     <a href="#" className="navbar__link">My List</a>
                 </div>
             </div>
-            <div className="navbar__right">
+            <div className="navbar__right" style={{ margin: 0, padding: 0 }}>
                 <button className="navbar__icon navbar__search" aria-label="Search">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />

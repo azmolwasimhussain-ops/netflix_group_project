@@ -11,6 +11,7 @@
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 0;
+  margin: 0;
 }
 
 .banner::before {
@@ -29,6 +30,8 @@
   position: relative;
   z-index: 2;
   max-width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .banner__badge {
@@ -39,15 +42,16 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 20px;
-  border-radius: 2px;
+  margin: 0 0 20px 0;
+  border-radius: 3px;
 }
 
 .banner__title {
   font-size: 56px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
   line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -55,7 +59,8 @@
 .banner__description {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
   line-height: 1.5;
   max-width: 500px;
 }
@@ -63,7 +68,8 @@
 .banner__info {
   display: flex;
   gap: 15px;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+  padding: 0;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -72,6 +78,8 @@
   color: #52b788;
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 .banner__year,
@@ -81,14 +89,17 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   padding: 4px 8px;
+  margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .banner__buttons {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .banner__btn {
@@ -96,12 +107,13 @@
   font-size: 14px;
   font-weight: 600;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
+  margin: 0;
 }
 
 .banner__btn--primary {
