@@ -67,6 +67,7 @@
   align-items: center;
   justify-content: center;
   transition: color 0.3s ease;
+  border-radius: 4px;
 }
 
 .navbar__icon:hover {
