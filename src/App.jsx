@@ -30,8 +30,6 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
-
       <Routes>
         {/* Home — Member 1 Banner */}
         <Route
@@ -46,7 +44,12 @@ export default function App() {
         {/* Search — Member 3 */}
         <Route
           path="/search"
-          element={<SearchPage onSelectItem={handleSelectItem} />}
+          element={
+            <>
+              <Navbar />
+              <SearchPage onSelectItem={handleSelectItem} />
+            </>
+          }
         />
 
         {/* Catch-all redirect */}

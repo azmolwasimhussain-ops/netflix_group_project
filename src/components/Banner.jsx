@@ -21,9 +21,7 @@ export default function Banner() {
       </div>
 
       {/* Dark Overlay Gradients */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80"></div>
-      <div className="absolute inset-0 bg-[rgba(0,0,0,0.55)]"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.55)] via-transparent to-[rgba(0,0,0,0.55)]"></div>
 
       {/* Top Navbar Area: Logo & Sign In */}
       <header className="relative z-10 flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-7xl mx-auto w-full">
